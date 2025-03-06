@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{14D1CE48-E493-41E0-809E-C395228DFA66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MxFace.Fingerprint.API", "Server\MxFace.Fingerprint.API\MxFace.Fingerprint.API.csproj", "{89E2934C-1C07-4E94-AFFF-79086CAD422B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{4E1418B7-7AC0-4016-9409-02238C400E99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{3977C54C-D8E5-4137-8E46-9AE163FF494C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MxFace.Fingerprint.Shared", "Shared\MxFace.Fingerprint.Shared\MxFace.Fingerprint.Shared.csproj", "{A31FF8CA-EA6F-450E-A387-7FD9A2E46C61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MxFace.Fingerprint.API.Client", "Client\MxFace.Fingerprint.API.Client\MxFace.Fingerprint.API.Client.csproj", "{94410B31-EE95-4989-ACCF-73E15999B933}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grpcServer", "grpcServer", "{6D118FE3-CB7A-47C5-8594-5BE8173045BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MxFace.Fingerprint.API.GRPC.Server", "grpcServer\MxFace.Fingerprint.API.GRPC.Server\MxFace.Fingerprint.API.GRPC.Server.csproj", "{18CBF3FD-653A-494D-9083-1F44904CB228}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "grpcClient", "grpcClient", "{15F9A823-16A8-4115-8C74-5AAD0821C853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MxFace.Fingerprint.API.GRPC.Client", "grpcClient\MxFace.Fingerprint.API.GRPC.Client\MxFace.Fingerprint.API.GRPC.Client.csproj", "{19E6F453-DD34-4FC9-9EA9-1CDC95A56961}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89E2934C-1C07-4E94-AFFF-79086CAD422B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E2934C-1C07-4E94-AFFF-79086CAD422B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E2934C-1C07-4E94-AFFF-79086CAD422B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E2934C-1C07-4E94-AFFF-79086CAD422B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A31FF8CA-EA6F-450E-A387-7FD9A2E46C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A31FF8CA-EA6F-450E-A387-7FD9A2E46C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A31FF8CA-EA6F-450E-A387-7FD9A2E46C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A31FF8CA-EA6F-450E-A387-7FD9A2E46C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94410B31-EE95-4989-ACCF-73E15999B933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94410B31-EE95-4989-ACCF-73E15999B933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94410B31-EE95-4989-ACCF-73E15999B933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94410B31-EE95-4989-ACCF-73E15999B933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18CBF3FD-653A-494D-9083-1F44904CB228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18CBF3FD-653A-494D-9083-1F44904CB228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18CBF3FD-653A-494D-9083-1F44904CB228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18CBF3FD-653A-494D-9083-1F44904CB228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19E6F453-DD34-4FC9-9EA9-1CDC95A56961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E6F453-DD34-4FC9-9EA9-1CDC95A56961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E6F453-DD34-4FC9-9EA9-1CDC95A56961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E6F453-DD34-4FC9-9EA9-1CDC95A56961}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{89E2934C-1C07-4E94-AFFF-79086CAD422B} = {14D1CE48-E493-41E0-809E-C395228DFA66}
+		{A31FF8CA-EA6F-450E-A387-7FD9A2E46C61} = {3977C54C-D8E5-4137-8E46-9AE163FF494C}
+		{94410B31-EE95-4989-ACCF-73E15999B933} = {4E1418B7-7AC0-4016-9409-02238C400E99}
+		{18CBF3FD-653A-494D-9083-1F44904CB228} = {6D118FE3-CB7A-47C5-8594-5BE8173045BC}
+		{19E6F453-DD34-4FC9-9EA9-1CDC95A56961} = {15F9A823-16A8-4115-8C74-5AAD0821C853}
+	EndGlobalSection
+EndGlobal

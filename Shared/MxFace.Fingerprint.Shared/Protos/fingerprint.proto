@@ -1,0 +1,43 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "MxFace.Fingerprint.gRPC";
+
+package fingerprint;
+
+service FingerprintService {
+  rpc Enroll (EnrollRequest) returns (EnrollResponse);
+  rpc Search (SearchRequest) returns (SearchResponse);
+  rpc Verify (VerifyRequest) returns (VerifyResponse);
+}
+
+message EnrollRequest {
+  bytes templateData = 1;
+  string personId = 2;
+  string group = 3;
+}
+
+message EnrollResponse {
+  int32 code = 1;
+  string message = 2;
+}
+
+message SearchRequest {
+  bytes templateData = 1;
+  string group = 2;
+}
+
+message SearchResponse {
+  string personId = 1;
+  double matchingScore = 2;
+  string errorMessage = 3;
+}
+
+message VerifyRequest {
+  bytes sourceTemplate = 1;
+  bytes targetTemplate = 2;
+}
+
+message VerifyResponse {
+  double score = 1;
+  string errorMessage = 2;
+}
