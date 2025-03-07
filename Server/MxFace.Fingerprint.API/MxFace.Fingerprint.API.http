@@ -1,0 +1,6 @@
+@MxFace.Fingerprint.API_HostAddress = http://localhost:5242
+
+GET {{MxFace.Fingerprint.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
