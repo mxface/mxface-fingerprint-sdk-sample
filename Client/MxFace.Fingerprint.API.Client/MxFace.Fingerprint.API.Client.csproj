@@ -11,6 +11,7 @@
 	</ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\grpcClient\MxFace.Fingerprint.API.GRPC.Client\MxFace.Fingerprint.API.GRPC.Client.csproj" />
     <ProjectReference Include="..\..\Shared\MxFace.Fingerprint.Shared\MxFace.Fingerprint.Shared.csproj" />
   </ItemGroup>
 
