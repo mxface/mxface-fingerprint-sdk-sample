@@ -23,6 +23,9 @@
     <Reference Include="MxFace.SDK.Fingerprint.Core">
       <HintPath>bin\Debug\net8.0\MxFace.SDK.Fingerprint.Core.dll</HintPath>
     </Reference>
+    <Reference Include="MxFace.SDK.Fingerprint.Data">
+      <HintPath>bin\Debug\net8.0\MxFace.SDK.Fingerprint.Data.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

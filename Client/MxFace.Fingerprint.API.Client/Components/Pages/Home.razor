@@ -5,12 +5,13 @@
 @inject IDevice deviceService
 @inject ICapture capturingServices
 @inject FingerprintApiService searchServices
+@rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
 
 @if (Device is null)
 {
-    <p>No Device Found!</p>
+    <p>Device is connecting...</p>
 }
 else
 {
@@ -28,9 +29,6 @@ else
                         <div class="detail_item_box"><strong>Status:</strong> <span class="text-warning">@Device.ErrorDescription</span></div>
                     </div>
                     <div class="custom_card details_box w-100 ms-3 mb-0 text-center">
-
-
-
                         @if (FingerprintData is not null)
                         {
                             @if (captureFingerprints.ContainsKey("capture1"))
@@ -42,14 +40,14 @@ else
                             else
                             {
                                 <div class="captured_img">
-                                    <img id="imgFingerprints" class="img-thumbnail" src="../FingerDemo.svg" alt="Capture 1" />
+                                    <img id="imgFingerprints" class="img-thumbnail" src="../FingerDemo.png" alt="Capture 1" />
                                 </div>
                             }
                         }
                         else
                         {
                             <div class="captured_img">
-                                <img id="imgFingerprints" class="img-thumbnail" src="../FingerDemo.svg" width="220" height="220" alt="Capture 1" />
+                                <img id="imgFingerprints" class="img-thumbnail" src="../FingerDemo.png" width="220" height="220" alt="Capture 1" />
                             </div>
                         }
 
@@ -191,14 +189,14 @@ else
                             else
                             {
                                 <div class="captured_img">
-                                    <img id="imgFingerprints" alt="Capture 1" class="img-thumbnail" src="../FingerDemo.svg" height="220" width="220" />
+                                    <img id="imgFingerprints" alt="Capture 1" class="img-thumbnail" src="../FingerDemo.png" height="220" width="220" />
                                 </div>
                             }
                         }
                         else
                         {
                             <div class="captured_img">
-                                <img id="imgFingerprints" alt="Capture 1" class="img-thumbnail" src="../FingerDemo.svg" height="220" width="220" />
+                                <img id="imgFingerprints" alt="Capture 1" class="img-thumbnail" src="../FingerDemo.png" height="220" width="220" />
                             </div>
                         }
                     </div>
@@ -215,14 +213,14 @@ else
                             else
                             {
                                 <div class="captured_img">
-                                    <img id="imgFingerprints" alt="Capture 2" class="img-thumbnail" src="../FingerDemo.svg" height="220" width="220" />
+                                    <img id="imgFingerprints" alt="Capture 2" class="img-thumbnail" src="../FingerDemo.png" height="220" width="220" />
                                 </div>
                             }
                         }
                         else
                         {
                             <div class="captured_img">
-                                <img id="imgFingerPrints" alt="Capture 2" class="img-thumbnail" src="../FingerDemo.svg" height="220" width="220" />
+                                <img id="imgFingerPrints" alt="Capture 2" class="img-thumbnail" src="../FingerDemo.png" height="220" width="220" />
                             </div>
                         }
                         <div class="mt-3">
