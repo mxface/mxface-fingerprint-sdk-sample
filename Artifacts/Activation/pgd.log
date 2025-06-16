@@ -1,0 +1,51 @@
+2025-06-05 10:10:25 Starting PG (revision: 13.1.20240905-d0e0ffb61375719308dd0399bba96b8dec34affd, mode: Single, pc)
+2025-06-05 10:10:25 Current UTC time: 04:40:25
+2025-06-05 10:10:25 Warning: could't open license file "<absolute path to the components folder>/FingerExtractor.lic", errno 22
+2025-06-05 10:10:25 Warning: could't open license file "<absolute path to the components folder>/FingerExtractor.lic", errno 22
+2025-06-05 10:10:25 PG started.
+2025-06-05 10:10:26 Invalid license file supplied.
+2025-06-05 10:10:26 Invalid license file supplied.
+2025-06-05 10:12:18 PG stopped.
+2025-06-05 10:12:20 Starting PG (revision: 13.1.20240905-d0e0ffb61375719308dd0399bba96b8dec34affd, mode: Single, pc)
+2025-06-05 10:12:20 Current UTC time: 04:42:20
+2025-06-05 10:12:20 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerExtractor.lic
+2025-06-05 10:12:20 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerMatcher.lic
+2025-06-05 10:12:20 PG started.
+2025-06-06 09:50:32 Starting PG (revision: 13.1.20240905-d0e0ffb61375719308dd0399bba96b8dec34affd, mode: Single, pc)
+2025-06-06 09:50:32 Current UTC time: 04:20:32
+2025-06-06 09:50:32 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerExtractor.lic
+2025-06-06 09:50:32 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerMatcher.lic
+2025-06-06 09:50:33 PG started.
+2025-06-09 09:51:21 Starting PG (revision: 13.1.20240905-d0e0ffb61375719308dd0399bba96b8dec34affd, mode: Single, pc)
+2025-06-09 09:51:21 Current UTC time: 04:21:21
+2025-06-09 09:51:21 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerExtractor.lic
+2025-06-09 09:51:21 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerMatcher.lic
+2025-06-09 09:51:21 PG started.
+2025-06-11 09:48:37 Starting PG (revision: 13.1.20240905-d0e0ffb61375719308dd0399bba96b8dec34affd, mode: Single, pc)
+2025-06-11 09:48:37 Current UTC time: 04:18:37
+2025-06-11 09:48:37 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerExtractor.lic
+2025-06-11 09:48:37 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerMatcher.lic
+2025-06-11 09:48:37 PG started.
+2025-06-12 09:49:01 Starting PG (revision: 13.1.20240905-d0e0ffb61375719308dd0399bba96b8dec34affd, mode: Single, pc)
+2025-06-12 09:49:01 Current UTC time: 04:19:01
+2025-06-12 09:49:01 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerExtractor.lic
+2025-06-12 09:49:02 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerMatcher.lic
+2025-06-12 09:49:02 PG started.
+2025-06-12 09:49:23 PG stopped.
+2025-06-12 09:50:01 Starting PG (revision: 13.1.20240905-d0e0ffb61375719308dd0399bba96b8dec34affd, mode: Single, pc)
+2025-06-12 09:50:01 Current UTC time: 04:20:01
+2025-06-12 09:50:01 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerExtractor.lic
+2025-06-12 09:50:01 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerMatcher.lic
+2025-06-12 09:50:01 PG started.
+2025-06-12 18:40:37 PG stopped.
+2025-06-13 09:41:10 Starting PG (revision: 13.1.20240905-d0e0ffb61375719308dd0399bba96b8dec34affd, mode: Single, pc)
+2025-06-13 09:41:10 Current UTC time: 04:11:10
+2025-06-13 09:41:10 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerExtractor.lic
+2025-06-13 09:41:10 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerMatcher.lic
+2025-06-13 09:41:10 PG started.
+2025-06-13 09:41:57 PG stopped.
+2025-06-13 09:46:15 Starting PG (revision: 13.1.20240905-d0e0ffb61375719308dd0399bba96b8dec34affd, mode: Single, pc)
+2025-06-13 09:46:15 Current UTC time: 04:16:15
+2025-06-13 09:46:15 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerExtractor.lic
+2025-06-13 09:46:15 Found license file: G:\Work\Projects\MxFace\SDKs\Neurotec Activation\Neurotec_Biometric_13_1_SDK\Bin\Licenses\FingerMatcher.lic
+2025-06-13 09:46:15 PG started.

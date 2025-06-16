@@ -1,7 +1,7 @@
+using System.Net.Http.Headers;
 using MxFace.Fingerprint.API.Client.Components;
 using MxFace.Fingerprint.API.Client.Interfaces;
 using MxFace.Fingerprint.API.Client.Services;
-using System.Net.Http.Headers;
 
 namespace MxFace.Fingerprint.API.Client
 {
@@ -12,38 +12,71 @@ namespace MxFace.Fingerprint.API.Client
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddRazorComponents()
-                .AddInteractiveServerComponents();
+            builder.Services.AddRazorComponents().AddInteractiveServerComponents();
 
-            builder.Services.AddHttpClient<FingerprintApiService>(client =>
-            {
-                client.BaseAddress = new Uri("https://localhost:7103/");
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            }).ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
-            {
-                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
-
-            });
+            builder
+                .Services.AddHttpClient<FingerprintApiService>(client =>
+                {
+                    client.BaseAddress = new Uri("https://localhost:7103/");
+                    client.DefaultRequestHeaders.Accept.Add(
+                        new MediaTypeWithQualityHeaderValue("application/json")
+                    );
+                })
+                .ConfigurePrimaryHttpMessageHandler(
+                    () =>
+                        new HttpClientHandler
+                        {
+                            ServerCertificateCustomValidationCallback = (
+                                message,
+                                cert,
+                                chain,
+                                errors
+                            ) => true,
+                        }
+                );
 
             // Configure device services
-            builder.Services.AddHttpClient<DeviceService>(client =>
-            {
-                client.BaseAddress = new Uri("https://localhost:8034/");
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            }).ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
-            {
-                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+            builder
+                .Services.AddHttpClient<DeviceService>(client =>
+                {
+                    client.BaseAddress = new Uri("https://localhost:8034/");
+                    client.DefaultRequestHeaders.Accept.Add(
+                        new MediaTypeWithQualityHeaderValue("application/json")
+                    );
+                })
+                .ConfigurePrimaryHttpMessageHandler(
+                    () =>
+                        new HttpClientHandler
+                        {
+                            ServerCertificateCustomValidationCallback = (
+                                message,
+                                cert,
+                                chain,
+                                errors
+                            ) => true,
+                        }
+                );
 
-            });
-
-            builder.Services.AddHttpClient<FingerprintCapturingService>(client =>
-            {
-                client.BaseAddress = new Uri("https://localhost:8034/");
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            }).ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler
-            {
-                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
-            });
+            builder
+                .Services.AddHttpClient<FingerprintCapturingService>(client =>
+                {
+                    client.BaseAddress = new Uri("https://localhost:8034/");
+                    client.DefaultRequestHeaders.Accept.Add(
+                        new MediaTypeWithQualityHeaderValue("application/json")
+                    );
+                })
+                .ConfigurePrimaryHttpMessageHandler(
+                    () =>
+                        new HttpClientHandler
+                        {
+                            ServerCertificateCustomValidationCallback = (
+                                message,
+                                cert,
+                                chain,
+                                errors
+                            ) => true,
+                        }
+                );
 
             // Register services
             builder.Services.AddScoped<ICapture, FingerprintCapturingService>();
@@ -64,8 +97,7 @@ namespace MxFace.Fingerprint.API.Client
             app.UseStaticFiles();
             app.UseAntiforgery();
 
-            app.MapRazorComponents<App>()
-                .AddInteractiveServerRenderMode();
+            app.MapRazorComponents<App>().AddInteractiveServerRenderMode();
 
             app.Run();
         }
