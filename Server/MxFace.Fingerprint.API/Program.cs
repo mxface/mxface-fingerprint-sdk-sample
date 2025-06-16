@@ -24,7 +24,14 @@ builder.Services.AddHttpClient();
 // Configure MxFace SDK
 builder.UseMxFaceFingerprintSDK(configure: config =>
 {
-    config.Settings = new BiometricConfigurationSettings();
+    var connectionString =
+        builder.Configuration.GetConnectionString("DefaultConnection")
+        ?? "Data Source=fingerprint.db;Cache=Shared";
+
+    config.Settings = new BiometricConfigurationSettings
+    {
+        SearchDatabaseConnectionString = connectionString,
+    };
 });
 
 var app = builder.Build();

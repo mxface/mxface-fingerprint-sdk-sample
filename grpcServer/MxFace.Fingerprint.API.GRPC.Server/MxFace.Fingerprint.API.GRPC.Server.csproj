@@ -1,37 +1,35 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
-	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
-		<Nullable>enable</Nullable>
-		<ImplicitUsings>enable</ImplicitUsings>
-	</PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Google.Protobuf" Version="3.29.3" />
-		<PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
-		<PackageReference Include="Grpc.AspNetCore.Server" Version="2.67.0" />
-		<PackageReference Include="Grpc.Tools" Version="2.70.0">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Protobuf Include="..\..\Shared\MxFace.Fingerprint.Shared\Protos\fingerprint.proto" GrpcServices="Server">
-	    <Link>Protos\fingerprint.proto</Link>
-	  </Protobuf>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Reference Include="MxFace.SDK.Fingerprint">
-	    <HintPath>bin\Debug\net8.0\MxFace.SDK.Fingerprint.dll</HintPath>
-	  </Reference>
-	  <Reference Include="MxFace.SDK.Fingerprint.Core">
-	    <HintPath>bin\Debug\net8.0\MxFace.SDK.Fingerprint.Core.dll</HintPath>
-	  </Reference>
-	  <Reference Include="MxFace.SDK.Fingerprint.Data">
-	    <HintPath>bin\Debug\net8.0\MxFace.SDK.Fingerprint.Data.dll</HintPath>
-	  </Reference>
-	</ItemGroup>
-
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.29.3" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.67.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.70.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Protobuf
+      Include="..\..\Shared\MxFace.Fingerprint.Shared\Protos\fingerprint.proto"
+      GrpcServices="Server"
+    >
+      <Link>Protos\fingerprint.proto</Link>
+    </Protobuf>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MxFace.SDK.Fingerprint">
+      <HintPath>bin\Debug\net8.0\MxFace.SDK.Fingerprint.dll</HintPath>
+    </Reference>
+    <Reference Include="MxFace.SDK.Fingerprint.Core">
+      <HintPath>bin\Debug\net8.0\MxFace.SDK.Fingerprint.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MxFace.SDK.Fingerprint.Data">
+      <HintPath>bin\Debug\net8.0\MxFace.SDK.Fingerprint.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
