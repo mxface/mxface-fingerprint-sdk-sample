@@ -1,0 +1,1698 @@
+================================= Diagnostic report =================================
+Time: Thursday 26 June 2025 05:16:37 PM IST
+
+============ Linux info =============================================================
+-------------------------------------------------------------------------------------
+Uname:
+Linux mantradbdr 6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+-------------------------------------------------------------------------------------
+Linux distribution:
+/etc/lsb-release: DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=22.04
+DISTRIB_CODENAME=jammy
+DISTRIB_DESCRIPTION="Ubuntu 22.04.4 LTS"
+/etc/os-release   /etc/debian_version: PRETTY_NAME="Ubuntu 22.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.4 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+bookworm/sid
+
+-------------------------------------------------------------------------------------
+Pre-login message:
+/etc/issue:
+Ubuntu 22.04.4 LTS \n \l
+
+-------------------------------------------------------------------------------------
+Linux kernel headers version:
+/usr/include/linux/version.h:
+
+
+-------------------------------------------------------------------------------------
+Linux kernel modules:
+bnep 32768 2 - Live 0xffffffffc1c03000
+bluetooth 1028096 7 bnep, Live 0xffffffffc1c12000
+ecdh_generic 16384 1 bluetooth, Live 0xffffffffc1c07000
+ecc 45056 1 ecdh_generic, Live 0xffffffffc1bf5000
+tls 155648 2 - Live 0xffffffffc1bcb000
+vxlan 159744 0 - Live 0xffffffffc1ba0000
+xt_set 20480 4 - Live 0xffffffffc1b98000
+ipt_rpfilter 12288 1 - Live 0xffffffffc1b89000
+ip_set_hash_ip 53248 1 - Live 0xffffffffc1b6d000
+ip_set_hash_net 65536 3 - Live 0xffffffffc1b75000
+ip_set 61440 3 xt_set,ip_set_hash_ip,ip_set_hash_net, Live 0xffffffffc1b5a000
+wireguard 114688 0 - Live 0xffffffffc1b41000
+curve25519_x86_64 36864 1 wireguard, Live 0xffffffffc1b34000
+libchacha20poly1305 20480 1 wireguard, Live 0xffffffffc1b27000
+chacha_x86_64 32768 1 libchacha20poly1305, Live 0xffffffffc1b1a000
+poly1305_x86_64 28672 1 libchacha20poly1305, Live 0xffffffffc1b11000
+libcurve25519_generic 45056 2 wireguard,curve25519_x86_64, Live 0xffffffffc1b01000
+libchacha 12288 1 chacha_x86_64, Live 0xffffffffc1aef000
+ip6_udp_tunnel 16384 2 vxlan,wireguard, Live 0xffffffffc1af5000
+udp_tunnel 32768 2 vxlan,wireguard, Live 0xffffffffc1ae3000
+xt_multiport 16384 20 - Live 0xffffffffc1adb000
+veth 45056 0 - Live 0xffffffffc1ad3000
+xt_statistic 12288 3 - Live 0xffffffffc1acd000
+xt_nat 12288 24 - Live 0xffffffffc1ac3000
+xt_mark 12288 161 - Live 0xffffffffc1463000
+ip6table_mangle 12288 1 - Live 0xffffffffc1ab7000
+ip6table_nat 12288 1 - Live 0xffffffffc144a000
+nft_masq 12288 1 - Live 0xffffffffc13ff000
+zfs 6598656 0 - Live 0xffffffffc1466000 (PO)
+nf_conntrack_netlink 57344 0 - Live 0xffffffffc144d000
+xfrm_user 61440 2 - Live 0xffffffffc1438000
+xfrm_algo 16384 1 xfrm_user, Live 0xffffffffc13c4000
+spl 180224 1 zfs, Live 0xffffffffc1410000 (O)
+xt_addrtype 12288 11 - Live 0xffffffffc13aa000
+vhost_vsock 24576 0 - Live 0xffffffffc1406000
+vmw_vsock_virtio_transport_common 57344 1 vhost_vsock, Live 0xffffffffc13ed000
+vhost 65536 1 vhost_vsock, Live 0xffffffffc13d0000
+vhost_iotlb 16384 1 vhost, Live 0xffffffffc13c6000
+vsock 61440 4 vhost_vsock,vmw_vsock_virtio_transport_common, Live 0xffffffffc13ae000
+ipt_REJECT 12288 5 - Live 0xffffffffc13a4000
+nf_reject_ipv4 12288 1 ipt_REJECT, Live 0xffffffffc139e000
+xt_conntrack 12288 89 - Live 0xffffffffc1392000
+xt_MASQUERADE 16384 11 - Live 0xffffffffc1396000
+nft_chain_nat 12288 4 - Live 0xffffffffc1386000
+xt_CHECKSUM 12288 1 - Live 0xffffffffc10f5000
+xt_comment 12288 766 - Live 0xffffffffc138a000
+xt_tcpudp 16384 76 - Live 0xffffffffc1378000
+nft_compat 20480 44 - Live 0xffffffffc10f2000
+iptable_raw 12288 1 - Live 0xffffffffc137c000
+iptable_mangle 12288 1 - Live 0xffffffffc1181000
+iptable_nat 12288 1 - Live 0xffffffffc105d000
+nf_nat 61440 6 xt_nat,ip6table_nat,nft_masq,xt_MASQUERADE,nft_chain_nat,iptable_nat, Live 0xffffffffc105f000
+nf_tables 372736 335 nft_masq,nft_chain_nat,nft_compat, Live 0xffffffffc0ffe000
+nfnetlink 20480 6 ip_set,nf_conntrack_netlink,nft_compat,nf_tables, Live 0xffffffffc0ff1000
+intel_rapl_msr 20480 0 - Live 0xffffffffc129a000
+intel_rapl_common 40960 1 intel_rapl_msr, Live 0xffffffffc1237000
+sunrpc 794624 1 - Live 0xffffffffc12b4000
+snd_sof_pci_intel_tgl 12288 0 - Live 0xffffffffc12aa000
+snd_sof_intel_hda_common 217088 1 snd_sof_pci_intel_tgl, Live 0xffffffffc1263000
+soundwire_intel 73728 1 snd_sof_intel_hda_common, Live 0xffffffffc121f000
+snd_sof_intel_hda_mlink 45056 2 snd_sof_intel_hda_common,soundwire_intel, Live 0xffffffffc1249000
+soundwire_cadence 40960 1 soundwire_intel, Live 0xffffffffc123b000
+snd_sof_intel_hda 24576 1 snd_sof_intel_hda_common, Live 0xffffffffc119a000
+snd_sof_pci 24576 2 snd_sof_pci_intel_tgl,snd_sof_intel_hda_common, Live 0xffffffffc1175000
+snd_sof_xtensa_dsp 12288 1 snd_sof_intel_hda_common, Live 0xffffffffc0c20000
+snd_sof 380928 3 snd_sof_intel_hda_common,snd_sof_intel_hda,snd_sof_pci, Live 0xffffffffc11c0000
+snd_sof_utils 16384 1 snd_sof, Live 0xffffffffc11b6000
+snd_soc_hdac_hda 24576 1 snd_sof_intel_hda_common, Live 0xffffffffc0cd4000
+snd_hda_ext_core 32768 4 snd_sof_intel_hda_common,snd_sof_intel_hda_mlink,snd_sof_intel_hda,snd_soc_hdac_hda, Live 0xffffffffc113e000
+snd_soc_acpi_intel_match 98304 2 snd_sof_pci_intel_tgl,snd_sof_intel_hda_common, Live 0xffffffffc10f7000
+intel_uncore_frequency 16384 0 - Live 0xffffffffc10eb000
+intel_uncore_frequency_common 16384 1 intel_uncore_frequency, Live 0xffffffffc1071000
+snd_soc_acpi 16384 2 snd_sof_intel_hda_common,snd_soc_acpi_intel_match, Live 0xffffffffc0c10000
+binfmt_misc 24576 1 - Live 0xffffffffc0cdd000
+soundwire_generic_allocation 12288 1 soundwire_intel, Live 0xffffffffc0cd0000
+soundwire_bus 110592 3 soundwire_intel,soundwire_cadence,soundwire_generic_allocation, Live 0xffffffffc1183000
+snd_hda_codec_realtek 200704 1 - Live 0xffffffffc1142000
+nls_iso8859_1 12288 2 - Live 0xffffffffc1138000
+snd_hda_codec_generic 122880 1 snd_hda_codec_realtek, Live 0xffffffffc110c000
+snd_soc_core 438272 4 snd_sof_intel_hda_common,soundwire_intel,snd_sof,snd_soc_hdac_hda, Live 0xffffffffc1077000
+snd_hda_codec_hdmi 94208 1 - Live 0xffffffffc0c92000
+nouveau 3100672 5 - Live 0xffffffffc0cf8000
+snd_compress 28672 1 snd_soc_core, Live 0xffffffffc0cea000
+ac97_bus 12288 1 snd_soc_core, Live 0xffffffffc0ce0000
+snd_pcm_dmaengine 16384 1 snd_soc_core, Live 0xffffffffc0cd6000
+snd_hda_intel 61440 2 - Live 0xffffffffc0c4f000
+snd_intel_dspcfg 36864 3 snd_sof_intel_hda_common,snd_sof,snd_hda_intel, Live 0xffffffffc0b8c000
+x86_pkg_temp_thermal 20480 0 - Live 0xffffffffc0cb9000
+snd_intel_sdw_acpi 16384 2 snd_sof_intel_hda_common,snd_intel_dspcfg, Live 0xffffffffc0caf000
+intel_powerclamp 24576 0 - Live 0xffffffffc0bdc000
+snd_hda_codec 204800 6 snd_sof_intel_hda,snd_soc_hdac_hda,snd_hda_codec_realtek,snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel, Live 0xffffffffc0c66000
+mxm_wmi 12288 1 nouveau, Live 0xffffffffc0c5c000
+snd_hda_core 139264 9 snd_sof_intel_hda_common,snd_sof_intel_hda,snd_soc_hdac_hda,snd_hda_ext_core,snd_hda_codec_realtek,snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec, Live 0xffffffffc0c25000
+drm_gpuvm 45056 1 nouveau, Live 0xffffffffc0c12000
+drm_exec 12288 2 nouveau,drm_gpuvm, Live 0xffffffffc0c0a000
+coretemp 24576 0 - Live 0xffffffffc0bf9000
+snd_hwdep 20480 1 snd_hda_codec, Live 0xffffffffc0b96000
+gpu_sched 61440 1 nouveau, Live 0xffffffffc0b84000
+snd_pcm 192512 11 snd_sof_intel_hda_common,soundwire_intel,snd_sof,snd_sof_utils,snd_soc_core,snd_hda_codec_hdmi,snd_compress,snd_pcm_dmaengine,snd_hda_intel,snd_hda_codec,snd_hda_core, Live 0xffffffffc0ba3000
+drm_ttm_helper 12288 1 nouveau, Live 0xffffffffc0b9b000
+snd_seq_midi 24576 0 - Live 0xffffffffc0b8e000
+ttm 110592 2 nouveau,drm_ttm_helper, Live 0xffffffffc0b6c000
+crct10dif_pclmul 12288 1 - Live 0xffffffffc0a71000
+snd_seq_midi_event 16384 1 snd_seq_midi, Live 0xffffffffc0b55000
+polyval_clmulni 12288 0 - Live 0xffffffffc0b4b000
+polyval_generic 12288 1 polyval_clmulni, Live 0xffffffffc0983000
+snd_rawmidi 57344 1 snd_seq_midi, Live 0xffffffffc0b5c000
+ghash_clmulni_intel 16384 0 - Live 0xffffffffc0a59000
+drm_display_helper 237568 1 nouveau, Live 0xffffffffc0b0a000
+sha256_ssse3 32768 0 - Live 0xffffffffc0a06000
+snd_seq 118784 2 snd_seq_midi,snd_seq_midi_event, Live 0xffffffffc0af0000
+cec 94208 1 drm_display_helper, Live 0xffffffffc0a3e000
+sha1_ssse3 32768 0 - Live 0xffffffffc09d4000
+aesni_intel 356352 0 - Live 0xffffffffc0a87000
+snd_seq_device 16384 3 snd_seq_midi,snd_rawmidi,snd_seq, Live 0xffffffffc0a7b000
+rc_core 73728 1 cec, Live 0xffffffffc09a0000
+snd_timer 49152 2 snd_pcm,snd_seq, Live 0xffffffffc0911000
+crypto_simd 16384 1 aesni_intel, Live 0xffffffffc0a6a000
+i2c_algo_bit 16384 1 nouveau, Live 0xffffffffc0a61000
+cmdlinepart 12288 0 - Live 0xffffffffc0922000
+cryptd 24576 2 ghash_clmulni_intel,crypto_simd, Live 0xffffffffc0a4c000
+spi_nor 163840 0 - Live 0xffffffffc0a12000
+snd 143360 18 snd_sof,snd_hda_codec_realtek,snd_hda_codec_generic,snd_soc_core,snd_hda_codec_hdmi,snd_compress,snd_hda_intel,snd_hda_codec,snd_hwdep,snd_pcm,snd_rawmidi,snd_seq,snd_seq_device,snd_timer, Live 0xffffffffc09dc000
+mei_me 53248 0 - Live 0xffffffffc09c3000
+rapl 20480 0 - Live 0xffffffffc09b3000
+soundcore 16384 1 snd, Live 0xffffffffc093e000
+mtd 98304 3 cmdlinepart,spi_nor, Live 0xffffffffc0986000
+mei 167936 1 mei_me, Live 0xffffffffc08f8000
+intel_cstate 24576 0 - Live 0xffffffffc0880000
+ee1004 16384 0 - Live 0xffffffffc0874000
+wmi_bmof 12288 0 - Live 0xffffffffc0868000
+gigabyte_wmi 12288 0 - Live 0xffffffffc0615000
+intel_pmc_core 118784 0 - Live 0xffffffffc0941000
+intel_vsec 20480 1 intel_pmc_core, Live 0xffffffffc0933000
+pmt_telemetry 16384 1 intel_pmc_core, Live 0xffffffffc0927000
+intel_hid 28672 0 - Live 0xffffffffc0917000
+pmt_class 12288 1 pmt_telemetry, Live 0xffffffffc086a000
+mac_hid 12288 0 - Live 0xffffffffc0860000
+acpi_pad 184320 0 - Live 0xffffffffc082a000
+sparse_keymap 12288 1 intel_hid, Live 0xffffffffc06bf000
+acpi_tad 20480 0 - Live 0xffffffffc06bc000
+sch_fq_codel 24576 2 - Live 0xffffffffc0659000
+kvm_intel 487424 0 - Live 0xffffffffc0882000
+kvm 1409024 1 kvm_intel, Live 0xffffffffc06c7000
+irqbypass 12288 1 kvm, Live 0xffffffffc0603000
+overlay 212992 35 - Live 0xffffffffc067e000
+iptable_filter 12288 1 - Live 0xffffffffc0653000
+ip_vs_wrr 12288 0 - Live 0xffffffffc0617000
+ip_vs_sh 12288 0 - Live 0xffffffffc0562000
+ip_vs_rr 12288 0 - Live 0xffffffffc0547000
+ip_vs 221184 6 ip_vs_wrr,ip_vs_sh,ip_vs_rr, Live 0xffffffffc065d000
+nf_conntrack 196608 7 xt_nat,nft_masq,nf_conntrack_netlink,xt_conntrack,xt_MASQUERADE,nf_nat,ip_vs, Live 0xffffffffc0619000
+nf_defrag_ipv6 24576 2 ip_vs,nf_conntrack, Live 0xffffffffc0511000
+nf_defrag_ipv4 12288 1 nf_conntrack, Live 0xffffffffc060f000
+ip6table_filter 12288 1 - Live 0xffffffffc0605000
+ip6_tables 36864 3 ip6table_mangle,ip6table_nat,ip6table_filter, Live 0xffffffffc05f2000
+br_netfilter 32768 0 - Live 0xffffffffc051e000
+bridge 421888 1 br_netfilter, Live 0xffffffffc056f000
+stp 12288 1 bridge, Live 0xffffffffc0567000
+llc 16384 2 bridge,stp, Live 0xffffffffc055b000
+arp_tables 28672 0 - Live 0xffffffffc054c000
+msr 12288 0 - Live 0xffffffffc050b000
+parport_pc 53248 0 - Live 0xffffffffc0532000
+ppdev 24576 0 - Live 0xffffffffc0523000
+lp 28672 0 - Live 0xffffffffc0514000
+parport 73728 3 parport_pc,ppdev,lp, Live 0xffffffffc04fb000
+efi_pstore 12288 0 - Live 0xffffffffc03c5000
+ip_tables 32768 4 iptable_raw,iptable_mangle,iptable_nat,iptable_filter, Live 0xffffffffc04f6000
+x_tables 65536 24 xt_set,ipt_rpfilter,xt_multiport,xt_statistic,xt_nat,xt_mark,ip6table_mangle,ip6table_nat,xt_addrtype,ipt_REJECT,xt_conntrack,xt_MASQUERADE,xt_CHECKSUM,xt_comment,xt_tcpudp,nft_compat,iptable_raw,iptable_mangle,iptable_nat,iptable_filter,ip6table_filter,ip6_tables,arp_tables,ip_tables, Live 0xffffffffc04e0000
+autofs4 57344 2 - Live 0xffffffffc04bd000
+raid10 73728 0 - Live 0xffffffffc04c8000
+raid456 192512 0 - Live 0xffffffffc048c000
+async_raid6_recov 20480 1 raid456, Live 0xffffffffc044f000
+async_memcpy 16384 2 raid456,async_raid6_recov, Live 0xffffffffc041f000
+async_pq 20480 2 raid456,async_raid6_recov, Live 0xffffffffc03fb000
+async_xor 16384 3 raid456,async_raid6_recov,async_pq, Live 0xffffffffc03c7000
+async_tx 16384 5 raid456,async_raid6_recov,async_memcpy,async_pq,async_xor, Live 0xffffffffc03a9000
+xor 20480 1 async_xor, Live 0xffffffffc0345000
+raid6_pq 126976 3 raid456,async_raid6_recov,async_pq, Live 0xffffffffc0380000
+libcrc32c 12288 5 nf_nat,nf_tables,ip_vs,nf_conntrack,raid456, Live 0xffffffffc034b000
+raid1 57344 0 - Live 0xffffffffc0333000
+raid0 24576 0 - Live 0xffffffffc0329000
+crc32_pclmul 12288 0 - Live 0xffffffffc0470000
+ahci 49152 3 - Live 0xffffffffc0457000
+r8169 118784 0 - Live 0xffffffffc042d000
+spi_intel_pci 12288 0 - Live 0xffffffffc0423000
+i2c_i801 36864 0 - Live 0xffffffffc0410000
+intel_lpss_pci 24576 0 - Live 0xffffffffc03ff000
+libahci 53248 1 ahci, Live 0xffffffffc03e8000
+spi_intel 32768 1 spi_intel_pci, Live 0xffffffffc03d9000
+realtek 36864 1 - Live 0xffffffffc03bc000
+intel_lpss 12288 1 intel_lpss_pci, Live 0xffffffffc03bf000
+i2c_smbus 16384 1 i2c_i801, Live 0xffffffffc03b0000
+xhci_pci 24576 0 - Live 0xffffffffc039f000
+idma64 20480 0 - Live 0xffffffffc0392000
+xhci_pci_renesas 20480 1 xhci_pci, Live 0xffffffffc0387000
+video 73728 1 nouveau, Live 0xffffffffc036a000
+wmi 28672 5 nouveau,mxm_wmi,wmi_bmof,gigabyte_wmi,video, Live 0xffffffffc035a000
+pinctrl_alderlake 32768 0 - Live 0xffffffffc031e000
+
+-------------------------------------------------------------------------------------
+File systems supported by Linux kernel:
+nodev	sysfs
+nodev	tmpfs
+nodev	bdev
+nodev	proc
+nodev	cgroup
+nodev	cgroup2
+nodev	cpuset
+nodev	devtmpfs
+nodev	configfs
+nodev	debugfs
+nodev	tracefs
+nodev	securityfs
+nodev	sockfs
+nodev	bpf
+nodev	pipefs
+nodev	ramfs
+nodev	hugetlbfs
+nodev	devpts
+	ext3
+	ext2
+	ext4
+	squashfs
+	vfat
+nodev	ecryptfs
+	fuseblk
+nodev	fuse
+nodev	fusectl
+nodev	efivarfs
+nodev	mqueue
+nodev	pstore
+nodev	autofs
+nodev	overlay
+nodev	binfmt_misc
+nodev	rpc_pipefs
+nodev	zfs
+
+-------------------------------------------------------------------------------------
+Enviroment variables
+SHELL=/bin/bash
+SUDO_GID=1000
+LANGUAGE=en_IN:en
+SUDO_COMMAND=./diagnostic_report.sh
+SUDO_USER=mantra-db-dr
+PWD=/home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Linux_x86_64/Activation
+LOGNAME=root
+HOME=/root
+LANG=en_IN
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+TERM=xterm-256color
+USER=root
+SHLVL=0
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+SUDO_UID=1000
+MAIL=/var/mail/root
+_=/usr/bin/env
+
+-------------------------------------------------------------------------------------
+GNU gcc version:
+./diagnostic_report.sh: line 228: gcc: command not found
+./diagnostic_report.sh: line 229: gcc: command not found
+
+-------------------------------------------------------------------------------------
+GNU glibc version: 2.35 stable
+
+-------------------------------------------------------------------------------------
+GNU glibc++ version:
+
+/lib/x86_64-linux-gnu/libstdc++.so.6 -> libstdc++.so.6.0.30:
+
+-------------------------------------------------------------------------------------
+libusb version: ./diagnostic_report.sh: line 253: libusb-config: command not found
+/lib/x86_64-linux-gnu/libusbmuxd-2.0.so.6 -> libusbmuxd-2.0.so.6.0.0
+/lib/x86_64-linux-gnu/libusb-1.0.so.0 -> libusb-1.0.so.0.3.0
+
+-------------------------------------------------------------------------------------
+libudev version: ./diagnostic_report.sh: line 263: pkg-config: command not found
+/lib/x86_64-linux-gnu/libudev.so.1 -> libudev.so.1.7.2
+
+-------------------------------------------------------------------------------------
+GStreamer 1.20.3
+
+-------------------------------------------------------------------------------------
+QtCore version: ./diagnostic_report.sh: line 283: pkg-config: command not found
+qmake version: ./diagnostic_report.sh: line 284: qmake: command not found
+
+=====================================================================================
+
+============ Harware info ===========================================================
+-------------------------------------------------------------------------------------
+CPU info:
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 800.000
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 0
+cpu cores	: 12
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 910.889
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 0
+cpu cores	: 12
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 799.991
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 4
+cpu cores	: 12
+apicid		: 8
+initial apicid	: 8
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 800.000
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 4
+cpu cores	: 12
+apicid		: 9
+initial apicid	: 9
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 800.000
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 8
+cpu cores	: 12
+apicid		: 16
+initial apicid	: 16
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 800.000
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 8
+cpu cores	: 12
+apicid		: 17
+initial apicid	: 17
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 800.019
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 12
+cpu cores	: 12
+apicid		: 24
+initial apicid	: 24
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 800.000
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 12
+cpu cores	: 12
+apicid		: 25
+initial apicid	: 25
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 8
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 800.000
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 16
+cpu cores	: 12
+apicid		: 32
+initial apicid	: 32
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 9
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 800.000
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 16
+cpu cores	: 12
+apicid		: 33
+initial apicid	: 33
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 10
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 800.126
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 20
+cpu cores	: 12
+apicid		: 40
+initial apicid	: 40
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 11
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 799.894
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 20
+cpu cores	: 12
+apicid		: 41
+initial apicid	: 41
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 12
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 769.085
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 24
+cpu cores	: 12
+apicid		: 48
+initial apicid	: 48
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 13
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 800.000
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 24
+cpu cores	: 12
+apicid		: 49
+initial apicid	: 49
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 14
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 801.915
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 28
+cpu cores	: 12
+apicid		: 56
+initial apicid	: 56
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 15
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 799.964
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 28
+cpu cores	: 12
+apicid		: 57
+initial apicid	: 57
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 16
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 845.752
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 36
+cpu cores	: 12
+apicid		: 72
+initial apicid	: 72
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 17
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 828.984
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 37
+cpu cores	: 12
+apicid		: 74
+initial apicid	: 74
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 18
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 825.069
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 38
+cpu cores	: 12
+apicid		: 76
+initial apicid	: 76
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 19
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 151
+model name	: 12th Gen Intel(R) Core(TM) i7-12700F
+stepping	: 2
+microcode	: 0x38
+cpu MHz		: 835.781
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 20
+core id		: 39
+cpu cores	: 12
+apicid		: 78
+initial apicid	: 78
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 32
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize arch_lbr ibt flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs ept_mode_based_exec tsc_scaling usr_wait_pause
+bugs		: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb rfds bhi
+bogomips	: 4224.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+dmidecode -t processor
+# dmidecode 2.9
+# SMBIOS entry point at 0x39a65000
+SMBIOS 3.6 present.
+
+Handle 0x0050, DMI type 4, 48 bytes
+Processor Information
+	Socket Designation: U3E1
+	Type: Central Processor
+	Family: <OUT OF SPEC>
+	Manufacturer: Intel(R) Corporation
+	ID: 72 06 09 00 FF FB EB BF
+	Version: 12th Gen Intel(R) Core(TM) i7-12700F
+	Voltage: 0.8 V
+	External Clock: 100 MHz
+	Max Speed: 4900 MHz
+	Current Speed: 2079 MHz
+	Status: Populated, Enabled
+	Upgrade: <OUT OF SPEC>
+	L1 Cache Handle: 0x004D
+	L2 Cache Handle: 0x004E
+	L3 Cache Handle: 0x004F
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 12
+	Core Enabled: 12
+	Thread Count: 20
+	Characteristics:
+		64-bit capable
+
+-------------------------------------------------------------------------------------
+Memory info:
+MemTotal:       32695780 kB
+MemFree:         3108740 kB
+MemAvailable:   27604856 kB
+Buffers:         1224508 kB
+Cached:         20796440 kB
+SwapCached:            0 kB
+Active:          9199620 kB
+Inactive:       16216296 kB
+Active(anon):    3656944 kB
+Inactive(anon):     1152 kB
+Active(file):    5542676 kB
+Inactive(file): 16215144 kB
+Unevictable:           4 kB
+Mlocked:               4 kB
+SwapTotal:       2097148 kB
+SwapFree:        2097148 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:              6132 kB
+Writeback:             0 kB
+AnonPages:       3394772 kB
+Mapped:          1684856 kB
+Shmem:            309408 kB
+KReclaimable:    3211524 kB
+Slab:            3820776 kB
+SReclaimable:    3211524 kB
+SUnreclaim:       609252 kB
+KernelStack:       39124 kB
+PageTables:        45556 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    18445036 kB
+Committed_AS:   12984428 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      131196 kB
+VmallocChunk:          0 kB
+Percpu:            28560 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      542024 kB
+DirectMap2M:    19214336 kB
+DirectMap1G:    15728640 kB
+
+dmidecode -t 6,16
+# dmidecode 2.9
+# SMBIOS entry point at 0x39a65000
+SMBIOS 3.6 present.
+
+Handle 0x003B, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 64 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 2
+
+-------------------------------------------------------------------------------------
+HDD info:
+/proc/partitions:
+major minor  #blocks  name
+
+   7        0          4 loop0
+   7        1      65224 loop1
+   7        2      65276 loop2
+   7        3      75644 loop3
+   7        4      75664 loop4
+   7        5      67812 loop5
+   7        6     264484 loop6
+   7        7     264504 loop7
+   8        0  976762584 sda
+   8        1     524288 sda1
+   8        2  976236544 sda2
+   8       16  976762584 sdb
+   8       17  781249536 sdb1
+   7        8     358088 loop8
+   7        9     517212 loop9
+   7       10     528392 loop10
+   7       11      93888 loop11
+   7       12       9956 loop12
+   7       13      10340 loop13
+   7       14      99316 loop14
+   7       15     100648 loop15
+   7       16      89128 loop16
+   7       17      91548 loop17
+   7       18     174852 loop18
+   7       19     174968 loop19
+   7       20      71016 loop20
+   7       21      71020 loop21
+   7       22      12492 loop22
+   7       23      13236 loop23
+   7       24      45504 loop24
+   7       25      45512 loop25
+   7       26        564 loop26
+   7       27        568 loop27
+
+-------------------
+/dev/sda:
+ATA device, with non-removable media
+	Model Number:       CT1000BX500SSD1                         
+	Serial Number:      2413E8A26C8D        
+	Firmware Revision:  M6CR056 
+
+-------------------
+/dev/sdb:
+ATA device, with non-removable media
+	Model Number:       WDC WD10EZEX-60WN4A2                    
+	Serial Number:      WD-WCC6YA5VRUXJ
+	Firmware Revision:  04.01A04
+
+-------------------------------------------------------------------------------------
+PCI devices:
+lspci:
+00:00.0 Host bridge: Intel Corporation Device 4668 (rev 02)
+00:01.0 PCI bridge: Intel Corporation 12th Gen Core Processor PCI Express x16 Controller #1 (rev 02)
+00:14.0 USB controller: Intel Corporation Device 7ae0 (rev 11)
+00:14.2 RAM memory: Intel Corporation Device 7aa7 (rev 11)
+00:15.0 Serial bus controller: Intel Corporation Device 7acc (rev 11)
+00:15.1 Serial bus controller: Intel Corporation Device 7acd (rev 11)
+00:15.2 Serial bus controller: Intel Corporation Device 7ace (rev 11)
+00:15.3 Serial bus controller: Intel Corporation Device 7acf (rev 11)
+00:16.0 Communication controller: Intel Corporation Device 7ae8 (rev 11)
+00:17.0 SATA controller: Intel Corporation Device 7ae2 (rev 11)
+00:19.0 Serial bus controller: Intel Corporation Device 7afc (rev 11)
+00:19.1 Serial bus controller: Intel Corporation Device 7afd (rev 11)
+00:1c.0 PCI bridge: Intel Corporation Device 7ab8 (rev 11)
+00:1c.2 PCI bridge: Intel Corporation Device 7aba (rev 11)
+00:1f.0 ISA bridge: Intel Corporation Device 7a87 (rev 11)
+00:1f.3 Audio device: Intel Corporation Device 7ad0 (rev 11)
+00:1f.4 SMBus: Intel Corporation Device 7aa3 (rev 11)
+00:1f.5 Serial bus controller: Intel Corporation Device 7aa4 (rev 11)
+01:00.0 VGA compatible controller: NVIDIA Corporation GF119 [GeForce GT 610] (rev a1)
+01:00.1 Audio device: NVIDIA Corporation GF119 HDMI Audio Controller (rev a1)
+03:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+
+-------------------------------------------------------------------------------------
+USB devices:
+NOTE: usbfs is not mounted
+lsusb:
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/4p, 20000M/x2
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/16p, 480M
+
+-------------------------------------------------------------------------------------
+Network info:
+
+--------------------
+Network interfaces:
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 10:ff:e0:2d:c0:aa brd ff:ff:ff:ff:ff:ff
+    inet 192.168.5.57/24 brd 192.168.5.255 scope global noprefixroute enp3s0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::883e:d0bc:991:e8d9/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: mpqemubr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether 52:54:00:49:ad:bc brd ff:ff:ff:ff:ff:ff
+    inet 10.188.52.1/24 brd 10.188.52.255 scope global mpqemubr0
+       valid_lft forever preferred_lft forever
+4: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:13:9d:da:64 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:13ff:fe9d:da64/64 scope link 
+       valid_lft forever preferred_lft forever
+5: br-fe8a5e433f0d: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:58:9d:0e:92 brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-fe8a5e433f0d
+       valid_lft forever preferred_lft forever
+6: lxdbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default qlen 1000
+    link/ether 00:16:3e:8c:55:3f brd ff:ff:ff:ff:ff:ff
+    inet 10.2.120.1/24 scope global lxdbr0
+       valid_lft forever preferred_lft forever
+23: calia3d9206bc9e@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-5ef02517-452c-39a3-048e-d36fffb3df2e
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+24: cali924b07db470@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-2da255ca-5e42-4661-e657-efc79b7ffee0
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+25: caliad5c23ce120@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-4903df13-2b0f-8a57-2edc-34badb2761dd
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+26: cali43793d405f4@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-9d94d24e-2973-60b2-f278-0fb09ca0db59
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+27: cali8209b705072@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-bcd11b01-edda-0503-7a76-cc55f84fa21d
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+28: cali32a78286110@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-5cdaf1c3-0b76-e3be-83fe-3b4d57cce788
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+29: caliea99b0a47c1@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-04a55cf1-c5de-3991-2a03-a56982803cd9
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+30: cali31c82e9bd2b@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-359db22a-0ba6-ae88-3cd9-a88d8b9d2a82
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+31: cali0ee19353c33@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-287d5f87-f0e2-9eb7-467b-3c6595369189
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+32: cali8d5b83091a4@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-9f575fc7-c3b1-0ebe-0763-919bead41daf
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+33: calid95f8a6ec0d@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-63ba7c82-0c07-461e-a69e-3ec814bf1ef9
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+34: califf3cff6c3d9@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-7ae7c9cb-cdb4-1c09-72dd-da4c5ac3d63e
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+35: calia4affb75894@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-64aa3bd6-1279-3c63-fd70-7efa8c775e63
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+36: cali4a51ef177f3@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-697c8d26-fa5d-0f4d-bae1-0ad4b7e726a8
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+37: cali7e62a14d416@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-7b189841-5db3-66a5-ede3-7ca78de63a16
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+38: cali89ddffcbed3@if3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default 
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-27921528-3c5e-54f1-3de2-dbf8b8eaef27
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link 
+       valid_lft forever preferred_lft forever
+41: vxlan.calico: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UNKNOWN group default 
+    link/ether 66:31:de:7f:c0:83 brd ff:ff:ff:ff:ff:ff
+    inet 10.1.107.128/32 scope global vxlan.calico
+       valid_lft forever preferred_lft forever
+    inet6 fe80::6431:deff:fe7f:c083/64 scope link 
+       valid_lft forever preferred_lft forever
+45: veth7f904f8@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 0e:aa:fa:44:d6:41 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+    inet6 fe80::caa:faff:fe44:d641/64 scope link 
+       valid_lft forever preferred_lft forever
+
+--------------------
+IP routing table:
+default via 192.168.5.1 dev enp3s0 proto static metric 20100 
+blackhole 10.1.107.128/26 proto 80 
+10.1.107.131 dev caliad5c23ce120 scope link 
+10.1.107.133 dev cali89ddffcbed3 scope link 
+10.1.107.135 dev calid95f8a6ec0d scope link 
+10.1.107.139 dev cali4a51ef177f3 scope link 
+10.1.107.142 dev cali43793d405f4 scope link 
+10.1.107.144 dev cali7e62a14d416 scope link 
+10.1.107.146 dev calia3d9206bc9e scope link 
+10.1.107.156 dev cali0ee19353c33 scope link 
+10.1.107.158 dev cali31c82e9bd2b scope link 
+10.1.107.161 dev caliea99b0a47c1 scope link 
+10.1.107.166 dev cali924b07db470 scope link 
+10.1.107.167 dev cali8d5b83091a4 scope link 
+10.1.107.171 dev calia4affb75894 scope link 
+10.1.107.177 dev cali8209b705072 scope link 
+10.1.107.179 dev califf3cff6c3d9 scope link 
+10.1.107.186 dev cali32a78286110 scope link 
+10.2.120.0/24 dev lxdbr0 proto kernel scope link src 10.2.120.1 linkdown 
+10.188.52.0/24 dev mpqemubr0 proto kernel scope link src 10.188.52.1 linkdown 
+169.254.0.0/16 dev mpqemubr0 scope link metric 1000 linkdown 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 
+172.18.0.0/16 dev br-fe8a5e433f0d proto kernel scope link src 172.18.0.1 linkdown 
+192.168.5.0/24 dev enp3s0 proto kernel scope link src 192.168.5.57 metric 100 
+
+=====================================================================================
+
+============ SDK info =============================================================
+
+Components' directory: /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Lib/Linux_x86_64/
+
+Components:
+  NdmCisco.so:
+  NdmMobotix.so:
+  NdmAbilma.so:
+  libAraImg.so:
+  libAraTrustFinger.so:
+  NdmAratekTrustFinger.so:
+  NdmArhFps.so:
+  libdermalogcalibratesdk.gcc.Release.64.so:
+  libdermaloglfscanapi.gcc.Release.64.so:
+  libdermaloglivescannerapi.gcc.Release.64.so:
+  libdermaloglivescannerlf10.gcc.Release.64.so:
+  libdermaloglivescannerlf1.gcc.Release.64.so:
+  libdermaloglivescannerzf10.gcc.Release.64.so:
+  libdermaloglivescannerzf1.gcc.Release.64.so:
+  libdermaloglivescannerzf2.gcc.Release.64.so:
+  libdermalogvc3.so:
+  libZF1ScanAPI.so:
+  NdmDermalog.so:
+  NdmDigitalPersonaUareU.so:
+  NdmFutronicEthernetFam.so:
+  libScanAPI.so:
+  NdmFutronic.so:
+  libcrypto.so:
+  /lib/x86_64-linux-gnu/libcrypto.so.3:
+  libCS1000q.so:
+  libcsd101-1.7.so:
+  libCSD101_GB_Wrapper.so:
+  libDID20IP.so:
+  libDID20.so:
+  libDS40p.so:
+  libDS40u.so:
+  libDS84C.so:
+  libDS84d.so:
+  libDS84t.so:
+  libDSBeep.so:
+  libGBMSAPI.so:
+  libJLW_CSD101.so:
+  libJLW_DID20.so:
+  libJLW_DS40I.so:
+  libJLW_DS40p_r.so:
+  libJLW_DS40p.so:
+  libJLW_DS84C_fm.so:
+  libJLW_DS84C_f.so:
+  libMC517.so:
+  libMS527.so:
+  libMS527t.so:
+  libVsRoll2.so:
+  libVsRoll.so:
+  NdmGreenBit.so:
+  libIBScanUltimate.so:
+  libLiveFinger2.so:
+  NdmIntegratedBiometricsIBScanUltimate.so:
+  libVCOMEx.so:
+  NdmLumidigm.so:
+  libNBDevices.so:
+  NdmNextBiometricsNB.so:
+  libNBioBSP.so:
+  NdmNitgen.so:
+  libUFScanner.so:
+  NdmSupremaBioMini.so:
+  libRSCore147.so:
+  libRS_SDK_x64.so:
+  NdmSupremaRealScan.so:
+  libbsapi.so:
+  NdmUpek.so:
+  NiemBlas.so:
+  NiemFingerNet.so:
+  libopenvino_intel_cpu_plugin.so:
+  libopenvino.so:
+  NiemIntelIe.so:
+  NiemTensorRt.so:
+  libIddk2000.so:
+  NdmIriTechIriShield.so:
+  libmkl_tiny.so:
+  libNBiometricClient.so:
+  libNBiometrics.so:
+  libNCore.so:
+  libNDevices.so:
+  libNfiq21.so:
+  libNfiq2.so:
+  libNLicensing.so:
+  libNMediaProc.so:
+  libNMedia.so:
+  libNMMAbisClient.so:
+  NdmMedia.so:
+  NdmOnvif.so:
+  NdmVirtual.so:
+  libwgssSTU.so:
+  NdmWacom.so:
+
+=====================================================================================
+
+============ PGD info ===============================================================
+
+-------------------------------------------------------------------------------------
+PGD is running
+procps:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root     3462727  0.0  0.0 828196  5860 ?        S<sl 12:20   0:06 /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Linux_x86_64/Activation/./pgd
+Path to pgd: /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Linux_x86_64/Activation/pgd
+Path to cwd: /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Linux_x86_64/Activation/
+-------------------------------------------------------------------------------------
+PGD config file: /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Linux_x86_64/Activation/pgd.conf
+PGD config:
+mode = single
+trial = false
+
+#mode = server
+
+#mode = gateway
+#address = example.com
+
+LicenseFile = /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Licenses/fingerprint-client-18478.lic
+LicenseFile = /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Licenses/fingerprint-extractor-18488.lic
+LicenseFile = /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Licenses/fingerprint-matcher-18498.lic
+
+#LicenceUsageLogFile = /tmp/license.log
+-------------------------------------------------------------------------------------
+PGD Licence Usage Log file: /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Linux_x86_64/Activation/LicenceUsage.log
+
+PGD Licence Usage Log:
+;"IP Address"	"Product Name"	Concurrent_Licence_Usage	Total_Concurrent_Licences	Non_Concurrent_Licence_Usage	Total_Non_Concurrent_Licences
+-------------------------------------------------------------------------------------
+
+PGD licenses:
+License file: '/home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Licenses/fingerprint-client-18478.lic'
+:000000048B65B5075EF56160BE2862C13C3C237FF4A199027B1AEC2847D689235037BC1A497ABC2C0A36BE4E70B7D4B1AE257B29D7DE8AB1747744384DD7CB908FF1468771E6BCDCA1FDED36D1962F266DAAC836043CB8EF44C6B3C477839BD5202F51F0394889740CAFED5BDD764375116EC67986350A2C67718510A5690D7BB444383D0F9C4C3DD81A4CC75BD9455A1C333A949838C59565D2286A36C0D6E9502FB822BA30843EBA78C97167E1AB6FFEB19EEFC7F2AAD7CC1A190C4BC4D2A11146A973A27C945DACEDA6C1C28E3B495C83B8AD5D5A58DD347FDE95A10B9A8AF861167EB06158F87D858EB754447A4B1D3A3FE43BCC7D8C73FA333ED2765A38390C6D72774BE38B186F87C495BEB8ABB3A98891A514E55328535BAA5AF2747011BC98C1FEC75A16955F96481EFE7DC255D0E1E5FA723FB69974FCD2055C439F50BBCFA1E9FFFC95F2B9F40C94449CA7FC9637230594B3E78F57950A7B879782EF84FFC642B2F4966BBEB6BB43948B8812BCD05491D72FC67D1D3881759A41662419048414AE571E7690FB44CD4FA9D0BD6014295FA5DED66FBD6008D7F7E1AC04A9C89039E6748644CE4C064330175469C4F25A7980883303146EB4CB691741D64FDEA5110B2439235D818E9288201227EDAC6497D702792D67EBD81FB003EEB5CB23FAA51972BDEF9173D749DE30952C3C1DAD317F40619CBC5D39E89E765E6D8483EBDA8C8A0A932A02502C7B1E8F477BB9DC1ADF98113A17137FA6592D36B2207D41BBA838E4FEF5C5E7E8B68427FD792449E01FEC5AD34BA8504B6A41A6840FCB000AAFEA508E40261312D756EDBFFF7C6AB213741E707640BEB64E29B2144C7913354DC04D00DA01452C9BD818F4BCAE3B33
+
+License file: '/home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Licenses/fingerprint-extractor-18488.lic'
+:00000004A6AFABB822DDBE7909F6F49414EA3700305E5B59AD75849CC28E112CBE1E896BB4E54EF3E5C25C46844B94DF3372447576443D5AC291374F9B0CF996559159F2BA0FF56EC87A64604E83BE62ADE3095E162F28BEEA51F50DF6E14474535DB74A8A5468F04D92562BCA643274DCC256BC6EBB9D47E3C9324A8B762D615EBBEEA97DED37DC01F871C8534F961743AFE3E907656782262A9A650FC7768F3D12F340242ABCCD7F5CEDECD410C5629AE2F1174A3F81BF81A4FF394A272B8F96F59C8F37014EC973F8888604BF5EF89CE48EF605D8255ABB65BAADDC7E8FE126E2AB46F026ECEED48B8A3206CAA0842592C48FCA84C7F313CAF3C9AE51C58EA4E3149613C7338589C3D6ACD63C1E905F3C59341E9F38E07B8C3724313FBEFE3BC63F556839188959F140CC463FCB1163618FB9342345A5094A0A992F565F8E3907D786F874CDC81F1514952A440F5EEA5655E56097D6CFF25F7B4AE2DFA17A81F28DC0ACB105482D4FDFCA5B4E3E9BAA58A6A79AEE544D6115AFD32C083F895BD744C70E2F8A5F0B8DFFE6D6E2BB66DF606CACCB344E609C676BD9BAAA51DD766E9424D99F182D75D6A3BACE654EDD348BAFFDB40F8CE6B605E1F14295D12D06A2A26A58EB67384574F367A3B24A8399D1242CA446660991501F52B6915558762AA83855F93439BB953DBBD27564C70E257887CC1C4349302E81804E71365D92046925E44B405227824E81CD2062652DA47CA1B0A00F63730B9890886B6A5E70608203A7F5DEA7273F11DB6F777E44B47CF8A861D9A29AE45EA6EE88D874C3379418470F54254AEC903A121D8DA65C30474DAB753D83E8D24B7C09528E02B7E87B967181A8B9541341182B96FA05A0BD90D52B74
+
+License file: '/home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Licenses/fingerprint-matcher-18498.lic'
+:00000004CE50F2B3A32E0003641FDFB5462431297E0640D566C16E2218F74D97F75951B1387ADDD1DECB572674952E45EBBD91E6601B07F55AAD156131EFECE164E0699A8F08360ED86572C24A1FAD1A7E523C1E5EC860773DAB636A9409452076A873F1BB41AA12F60FD9457BA6D66740534255CA79FF0DE208A30F7252DDD6B9C9BC4CEDD2528C26ED270B7D4843F005B5B69E154BCCF1711F241B9735A98423DA03D535DB047E1A79F1BD2943362FC0E54F9C6A8FBFE9BE95AABD9AF878D5ADBAF4E3394BAB23CB5F8DEC0D8B6A0FA86F299C248DB30B2D316B1D94514A79F3BCD6724DC0F6F3B4FF624C62F56000E7760D5B006C257C4D73ACDB4223ED43C317F09AF828225E04FDEF68B290BA5F8FE83F42A47FAD3559D86659B4428C6E79DAE1560BF75DC7F3123FFC6BA7C967B72358CE5913685716C7D53276E2594DAF2A77365B880E50FFE7B92677338F9B3A19264416A7A60003C859AC87E20EA0D060D22475C83DC053AD7A39C6F9F4B085C482F91BBDBE582F15A8FBBE66F1082CFC10B45998E64AD154D5A3CF1DF0B22F54E6BFEF49BCD3A1F089F227525915EC685430E5C8AB47EDE29BBABAACDD61234D5601AF68BD9864D4F3C87DAD1877EB10192BEB97B531F4036D41C52451CA6B46F8EF4305DBB1BD0F51A8570E393C540C49EE1E9BBDC15A62FA6EC5E6C33E32F9A654DA16F0F6E699A678B1C87B3A66484C5C0AFC4FFCE6D9D2AD02E44AC2E3CB90808D9D83211671B6CC901556EAF217221D6B5F72D153B03153CFB2D830E0526D31BB481682068ACABF98E56E422CB7DDEF057066F233B0E101242A0E25B1A42B806BCA4A77C735EDEF33EF8E0D7F85D35857D71C199B776100F7F2E3CF9E82E0CC97
+
+
+-------------------------------------------------------------------------------------
+
+Computer ID:
+id_gen not found
+
+=====================================================================================
+
+============ PGD log ================================================================
+
+PGD log file: /tmp/pgd.log
+PGD log:
+2025-06-26 12:20:08 Starting PG (revision: 13.1.20240905-d0e0ffb61375719308dd0399bba96b8dec34affd, mode: single, pc)
+2025-06-26 12:20:08 Current UTC time: 06:50:08
+2025-06-26 12:20:08 Linux mantradbdr 6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2 x86_64
+2025-06-26 12:20:08 Found license file: /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Licenses/fingerprint-client-18478.lic
+2025-06-26 12:20:08 Found license file: /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Licenses/fingerprint-extractor-18488.lic
+2025-06-26 12:20:08 Found license file: /home/mantra-db-dr/Neurotec_Biometric_13_1_SDK/Neurotec_Biometric_13_1_SDK/Bin/Licenses/fingerprint-matcher-18498.lic
+2025-06-26 12:20:08 PG started (pid: 3462727).
+2025-06-26 12:20:09 Invalid license file supplied.
+2025-06-26 12:20:09 Invalid license file supplied.
+2025-06-26 12:20:09 Invalid license file supplied.
+
+=====================================================================================
+
+============ Dongle Info ============================================================
+
+no dongles found
+
+=====================================================================================
+
+============ License check ==========================================================
+
+License 'SingleComputerLicense:VeriFinger': not available.
+License 'SingleComputerLicense:VeriLook': not available.
+License 'SingleComputerLicense:FingerCell': not available.
+License 'SingleComputerLicense:FaceCell': not available.
+License 'SingleComputerLicense:MegaMatcherServer': not available.
+License 'SingleComputerLicense:MegaMatcherClusterServer': not available.
+License 'SingleComputerLicense:MegaMatcherClusterNode': not available.
+License 'SingleComputerLicense:MegaMatcherClient': not available.
+License 'SingleComputerLicense:SentiSight': not available.
+License 'SingleComputerLicense:VFExtractor': not available.
+License 'SingleComputerLicense:VFMatcher': not available.
+License 'SingleComputerLicense:VFExtended': not available.
+License 'SingleComputerLicense:VLExtractor': not available.
+License 'SingleComputerLicense:VLMatcher': not available.
+License 'SingleComputerLicense:VLExtended': not available.
+License 'SingleComputerLicense:VFExtractorV': not available.
+License 'SingleComputerLicense:VFMatcherV': not available.
+License 'SingleComputerLicense:VLExtractorV': not available.
+License 'SingleComputerLicense:VLMatcherV': not available.
+License 'SingleComputerLicense:VEExtractor': not available.
+License 'SingleComputerLicense:VEMatcher': not available.
+License 'SingleComputerLicense:VEExtended': not available.
+License 'SingleComputerLicense:VEExtractorV': not available.
+License 'SingleComputerLicense:VEMatcherV': not available.
+License 'SingleComputerLicense:VFExtractorS': not available.
+License 'SingleComputerLicense:VFMatcherS': not available.
+License 'SingleComputerLicense:VLExtractorS': not available.
+License 'SingleComputerLicense:VLMatcherS': not available.
+License 'SingleComputerLicense:MMAFingerEx': not available.
+License 'SingleComputerLicense:VLSurveillance': not available.
+License 'SingleComputerLicense:VFBSS': not available.
+License 'SingleComputerLicense:VLBSS': not available.
+License 'SingleComputerLicense:VEBSS': not available.
+License 'SingleComputerLicense:VPExtractor': not available.
+License 'SingleComputerLicense:VPMatcher': not available.
+License 'SingleComputerLicense:MMAFinger': not available.
+License 'SingleComputerLicense:FingersCardExtractor': not available.
+License 'SingleComputerLicense:VFBSS_S': not available.
+License 'SingleComputerLicense:VLBSS_S': not available.
+License 'SingleComputerLicense:VEBSS_S': not available.
+License 'SingleComputerLicense:VEExtractorS': not available.
+License 'SingleComputerLicense:VEMatcherS': not available.
+License 'SingleComputerLicense:FacesCardExtractor': not available.
+License 'SingleComputerLicense:Special': not available.
+License 'SingleComputerLicense:MMAIrisEx': not available.
+License 'SingleComputerLicense:MMAIris': not available.
+License 'SingleComputerLicense:FingerCapturerConcurrent': not available.
+License 'SingleComputerLicense:FingerExtractor': not available.
+License 'SingleComputerLicense:FingerCardExtractor': not available.
+License 'SingleComputerLicense:FingerMatcher': not available.
+License 'SingleComputerLicense:FingerFastMatcher': not available.
+License 'SingleComputerLicense:FingerSegmenter': not available.
+License 'SingleComputerLicense:WSQ': not available.
+License 'SingleComputerLicense:FingerBSS': not available.
+License 'SingleComputerLicense:FingerClient': not available.
+License 'SingleComputerLicense:FaceCapturerConcurrent': not available.
+License 'SingleComputerLicense:FaceExtractor': not available.
+License 'SingleComputerLicense:FaceCardExtractor': not available.
+License 'SingleComputerLicense:FaceMatcher': not available.
+License 'SingleComputerLicense:FaceFastMatcher': not available.
+License 'SingleComputerLicense:FaceBSS': not available.
+License 'SingleComputerLicense:FaceClient': not available.
+License 'SingleComputerLicense:IrisCapturerConcurrent': not available.
+License 'SingleComputerLicense:IrisExtractor': not available.
+License 'SingleComputerLicense:IrisCardExtractor': not available.
+License 'SingleComputerLicense:IrisMatcher': not available.
+License 'SingleComputerLicense:IrisFastMatcher': not available.
+License 'SingleComputerLicense:IrisBSS': not available.
+License 'SingleComputerLicense:IrisClient': not available.
+License 'SingleComputerLicense:PalmCapturerConcurrent': not available.
+License 'SingleComputerLicense:PalmMatcher': not available.
+License 'SingleComputerLicense:PalmFastMatcher': not available.
+License 'SingleComputerLicense:PalmClient': not available.
+License 'SingleComputerLicense:Cluster': not available.
+License 'SingleComputerLicense:Server': not available.
+License 'SingleComputerLicense:VoiceCapturerConcurrent': not available.
+License 'SingleComputerLicense:VoiceExtractor': not available.
+License 'SingleComputerLicense:VoiceMatcher': not available.
+License 'SingleComputerLicense:VoiceFastMatcher': not available.
+License 'SingleComputerLicense:VoiceClient': not available.
+License 'SingleComputerLicense:MMAFaceEx': not available.
+License 'SingleComputerLicense:MMAFace': not available.
+License 'SingleComputerLicense:MMAFaceDev': not available.
+License 'SingleComputerLicense:MMAFingerDev': not available.
+License 'SingleComputerLicense:MMAIrisDev': not available.
+License 'SingleComputerLicense:FingerImageProcessing': not available.
+License 'SingleComputerLicense:FingerImageProcessing': not available.
+License 'SingleComputerLicense:FingerImageProcessing': not available.
+License 'SingleComputerLicense:FingerFastSegmenter': not available.
+License 'SingleComputerLicense:FaceImageProcessing': not available.
+License 'SingleComputerLicense:FaceImageProcessing': not available.
+License 'SingleComputerLicense:FaceTokenImage': not available.
+License 'SingleComputerLicense:FaceFastTokenImage': not available.
+License 'SingleComputerLicense:IrisImageProcessing': not available.
+License 'SingleComputerLicense:IrisImageProcessing': not available.
+License 'SingleComputerLicense:PalmImageProcessing': not available.
+License 'SingleComputerLicense:PalmImageProcessing': not available.
+License 'SingleComputerLicense:VoiceProcessing': not available.
+License 'SingleComputerLicense:VoiceProcessing': not available.
+License 'SingleComputerLicense:SentiSculpt': not available.
+License 'SingleComputerLicense:SentiGaze': not available.
+License 'SingleComputerLicense:FingerCapturer': not available.
+License 'SingleComputerLicense:VoiceCapturer': not available.
+License 'SingleComputerLicense:FaceCapturer': not available.
+License 'SingleComputerLicense:IrisCapturer': not available.
+License 'SingleComputerLicense:PalmCapturer': not available.
+License 'SingleComputerLicense:FingerLatent': not available.
+License 'SingleComputerLicense:FingerLatent': not available.
+License 'SingleComputerLicense:SentiVeillance': not available.
+License 'SingleComputerLicense:NCheck': not available.
+License 'SingleComputerLicense:Sentibotics': not available.
+License 'SingleComputerLicense:FaceVerification': not available.
+License 'SingleComputerLicense:ABISImageProcessing': not available.
+License 'SingleComputerLicense:ABISMatchingDevelopment': not available.
+License 'SingleComputerLicense:ABISManagement': not available.
+License 'SingleComputerLicense:Adjudication': not available.
+License 'SingleComputerLicense:MultitenancyUnlimited': not available.
+License 'SingleComputerLicense:SentiVeillance10': not available.
+License 'SingleComputerLicense:MMAFingerExtreme': not available.
+License 'SingleComputerLicense:MMAIrisExtreme': not available.
+License 'SingleComputerLicense:MMAFaceExtreme': not available.
+License 'SingleComputerLicense:EmbeddedFingerFastMatcher': not available.
+License 'SingleComputerLicense:EmbeddedIrisFastMatcher': not available.
+License 'SingleComputerLicense:EmbeddedFaceFastMatcher': not available.
+License 'SingleComputerLicense:ABISClient': not available.
+License 'SingleComputerLicense:SentiVeillanceServer': not available.
+License 'SingleComputerLicense:SentiMask': not available.
+License 'SingleComputerLicense:AbisMatchingCustom50': not available.
+License 'SingleComputerLicense:AbisMatchingCustomFinger200': not available.
+License 'SingleComputerLicense:AbisMatchingCustomIris200': not available.
+License 'SingleComputerLicense:AbisMatchingCustomFace200': not available.
+License 'SingleComputerLicense:SentiBoticsNavigation': not available.
+License 'SingleComputerLicense:SentiVeillanceVH': not available.
+License 'SingleComputerLicense:SentiVeillanceALPR': not available.
+License 'SingleComputerLicense:ABISMatchingStandard': not available.
+License 'SingleComputerLicense:ABISMatchingExtended': not available.
+License 'SingleComputerLicense:ABISMatchingExtreme': not available.
+License 'SingleComputerLicense:MMAPalmEx': not available.
+License 'SingleComputerLicense:MMAPalm': not available.
+License 'SingleComputerLicense:MMAPalmDev': not available.
+License 'SingleComputerLicense:MMAPalmExtreme': not available.
+License 'SingleComputerLicense:EmbeddedPalmFastMatcher': not available.
+License 'SingleComputerLicense:MultitenancyDevelopment': not available.
+License 'SingleComputerLicense:MultitenancyStandard': not available.
+License 'SingleComputerLicense:MultitenancyExtended': not available.
+License 'SingleComputerLicense:MultitenancyExtreme': not available.
+License 'SingleComputerLicense:SentiSightClassification': not available.
+License 'SingleComputerLicense:SentiSightObjectDetection': not available.
+License 'SingleComputerLicense:SentiSightSimilaritySearch': not available.
+License 'SingleComputerLicense:SentiSightSegmentation': not available.
+License 'SingleComputerLicense:SentiVeillanceCluster': not available.
+License 'SingleComputerLicense:FingerMatcherLite': not available.
+License 'SingleComputerLicense:FaceMatcherLite': not available.
+License 'SingleComputerLicense:IrisMatcherLite': not available.
+License 'SingleComputerLicense:MOSIPSDK': not available.
+License 'SingleComputerLicense:FingerImageProcessingServer10X': not available.
+License 'SingleComputerLicense:FingerImageProcessingServer10X': not available.
+License 'SingleComputerLicense:FaceImageProcessingServer10X': not available.
+License 'SingleComputerLicense:IrisImageProcessingServer10X': not available.
+License 'SingleComputerLicense:PalmImageProcessingServer10X': not available.
+License 'SingleComputerLicense:VoiceProcessingServer10X': not available.
+License 'SingleComputerLicense:TattooClient': not available.
+License 'SingleComputerLicense:TattooMatcher': not available.
+License 'SingleComputerLicense:CriminalABISRegistration': not available.
+License 'SingleComputerLicense:CriminalABISInvestigation': not available.
+License 'SingleComputerLicense:MMAVoiceEx': not available.
+License 'SingleComputerLicense:MMAVoice': not available.
+License 'SingleComputerLicense:MMAVoiceDev': not available.
+License 'SingleComputerLicense:MMAFingerCustom': not available.
+License 'SingleComputerLicense:MMAIrisCustom': not available.
+License 'SingleComputerLicense:MMAFaceCustom': not available.
+License 'SingleComputerLicense:MMAPalmCustom': not available.
+License 'SingleComputerLicense:MMAVoiceCustom': not available.
+License 'SingleComputerLicense:FingerProcessingCustom': not available.
+License 'SingleComputerLicense:FingerProcessingCustom': not available.
+License 'SingleComputerLicense:FaceProcessingCustom': not available.
+License 'SingleComputerLicense:IrisProcessingCustom': not available.
+License 'SingleComputerLicense:PalmProcessingCustom': not available.
+License 'SingleComputerLicense:VoiceProcessingCustom': not available.
+License 'SingleComputerLicense:LatentMatchingDevelopment': not available.
+License 'SingleComputerLicense:LatentMatchingStandard': not available.
+License 'SingleComputerLicense:LatentMatchingExtended': not available.
+License 'SingleComputerLicense:LatentMatchingExtreme': not available.
+License 'SingleComputerLicense:LatentMatchingUnlimited': not available.
+License 'SingleComputerLicense:CriminalRegistrationClient': not available.
+License 'SingleComputerLicense:CriminalInvestigationClient': not available.
+License 'SingleComputerLicense:FacesBackgroundRemoval': not available.
+License 'SingleComputerLicense:PalmLatent': not available.
+License 'SingleComputerLicense:PalmLatent': not available.
+License 'Concurrent:MegaMatcherClient': not available.
+License 'Concurrent:VFExtractor': not available.
+License 'Concurrent:VLExtractor': not available.
+License 'Concurrent:VEExtractor': not available.
+License 'Concurrent:FingerClient': not available.
+License 'Concurrent:FaceClient': not available.
+License 'Concurrent:IrisClient': not available.
+License 'Concurrent:PalmClient': not available.
+License 'Concurrent:VoiceClient': not available.
+
+=====================================================================================
+
+============ Trial info =============================================================
+
+<!doctype html>
+<html>
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+	<meta name="id" content="polLoginRedirect" >
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Policy Login Redirect</title>
+	<script type="text/JavaScript" src="jquery_slim_min-7.1.2-2227272329(eng).js"></script>
+	<script type="text/javascript">
+	var strPolicyRequir = "The policy set up by your network administrator requires that ";
+	var strAuthYourself = "you authenticate yourself with this firewall before you can have access.";
+	var strAuthYourselfInDomain = "only authenticated users are allowed access through this firewall. You do not appear to be logged into the domain, and so must authenticate yourself before you can have access.";
+	var strAuthIntro = "To authenticate yourself click on the following link and enter your user name and password to log in to the firewall.";
+	var strClickLogin = "Click here to log in";
+	</script>
+	<script type="text/JavaScript" src="polLoginRedirect.js"></script>
+	<link rel=stylesheet href="swl_login-6.2.5-3613594473(eng).css" TYPE="text/css">
+</head>
+<body id="sim-ui7">
+	<div class="ui7-login-cont sw-flexbox sw-flexbox--center-items sw-flexbox--center-justify">
+		<div class="ui7-login-trans-dialog sw-flexbox sw-flexbox--column">
+			<div class="ui7-login-trans-dialog__header sw-flexbox__flex-none">
+				<div class="ui7-login-trans-dialog__logo sw-flexbox sw-flexbox--center-justify">
+					<div class="ui7-login-trans-dialog__logo-img sw-flexbox__flex-none"></div>
+				</div>
+				<div class="ui7-login-trans-dialog__desc sw-flexbox sw-flexbox--center-justify">
+					<div class="ui7-login-trans-dialog__desc-img sw-flexbox__flex-none"></div>
+					<div class="ui7-login-trans-dialog__desc-name sw-flexbox__flex-none">Network Security Appliance</div>
+				</div>
+			</div>
+			<div class="ui7-login-trans-dialog__body sw-flexbox__flex">
+				<div class="ui7-login__line sw-flexbox sw-flexbox--center-items">
+					<div class="icon_warning"></div>
+					<span class="ui7-login__emphasis">Authentication Required</span>
+				</div>
+				<div id="popup_box_text" class="ui7-login__line"></div>
+			</div>
+			<div id="popup_box_action" class="ui7-login-trans-dialog__footer sw-flexbox__flex-none sw-flexbox sw-flexbox--center-items">
+				<a href="/sonicui/7/login/#/?cid=14"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<!doctype html>
+<html>
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+	<meta name="id" content="polLoginRedirect" >
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Policy Login Redirect</title>
+	<script type="text/JavaScript" src="jquery_slim_min-7.1.2-2227272329(eng).js"></script>
+	<script type="text/javascript">
+	var strPolicyRequir = "The policy set up by your network administrator requires that ";
+	var strAuthYourself = "you authenticate yourself with this firewall before you can have access.";
+	var strAuthYourselfInDomain = "only authenticated users are allowed access through this firewall. You do not appear to be logged into the domain, and so must authenticate yourself before you can have access.";
+	var strAuthIntro = "To authenticate yourself click on the following link and enter your user name and password to log in to the firewall.";
+	var strClickLogin = "Click here to log in";
+	</script>
+	<script type="text/JavaScript" src="polLoginRedirect.js"></script>
+	<link rel=stylesheet href="swl_login-6.2.5-3613594473(eng).css" TYPE="text/css">
+</head>
+<body id="sim-ui7">
+	<div class="ui7-login-cont sw-flexbox sw-flexbox--center-items sw-flexbox--center-justify">
+		<div class="ui7-login-trans-dialog sw-flexbox sw-flexbox--column">
+			<div class="ui7-login-trans-dialog__header sw-flexbox__flex-none">
+				<div class="ui7-login-trans-dialog__logo sw-flexbox sw-flexbox--center-justify">
+					<div class="ui7-login-trans-dialog__logo-img sw-flexbox__flex-none"></div>
+				</div>
+				<div class="ui7-login-trans-dialog__desc sw-flexbox sw-flexbox--center-justify">
+					<div class="ui7-login-trans-dialog__desc-img sw-flexbox__flex-none"></div>
+					<div class="ui7-login-trans-dialog__desc-name sw-flexbox__flex-none">Network Security Appliance</div>
+				</div>
+			</div>
+			<div class="ui7-login-trans-dialog__body sw-flexbox__flex">
+				<div class="ui7-login__line sw-flexbox sw-flexbox--center-items">
+					<div class="icon_warning"></div>
+					<span class="ui7-login__emphasis">Authentication Required</span>
+				</div>
+				<div id="popup_box_text" class="ui7-login__line"></div>
+			</div>
+			<div id="popup_box_action" class="ui7-login-trans-dialog__footer sw-flexbox__flex-none sw-flexbox sw-flexbox--center-items">
+				<a href="/sonicui/7/login/#/?cid=15"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+=====================================================================================
+
